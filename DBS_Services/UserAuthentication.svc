@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="DBS_Services.UserAuthentication" CodeBehind="UserAuthentication.svc.cs" %>
