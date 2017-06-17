@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
+using System.Data.Entity;
 using System.Text;
 
 namespace DBS_Services
@@ -18,7 +19,7 @@ namespace DBS_Services
             throw new NotImplementedException();
         }*/
         List<String> rewardsArray = new List<String>();
-        public List<string> getRewards(String custID)
+        public List<String> getRewards(String custID)
         {
             try
             {
