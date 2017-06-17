@@ -22,7 +22,8 @@ namespace DBS_Services
         {
             try
             {
-               using (rewardsdbEntities dataCollector = new rewardsdbEntities())
+
+                using (rewardsdbEntities1 dataCollector = new rewardsdbEntities1())
                 {
                     dataCollector.Database.Connection.Open();
                     foreach (var dataRow in dataCollector.rewardsmasters)

@@ -80,36 +80,38 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DBS_Model.Context.tt">
+    <Content Include="DBSModel1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>DBS_Model.Context.cs</LastGenOutput>
-      <DependentUpon>DBS_Model.edmx</DependentUpon>
+      <DependentUpon>DBSModel1.edmx</DependentUpon>
+      <LastGenOutput>DBSModel1.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="DBS_Model.tt">
+    <Content Include="DBSModel1.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DBS_Model.edmx</DependentUpon>
-      <LastGenOutput>DBS_Model.cs</LastGenOutput>
+      <DependentUpon>DBSModel1.edmx</DependentUpon>
+      <LastGenOutput>DBSModel1.cs</LastGenOutput>
     </Content>
     <Content Include="reedemRewards.svc" />
     <Content Include="UserAuthentication.svc" />
     <Content Include="walletTopUp.svc" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DBS_Model.Context.cs">
+    <Compile Include="DBSModel1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DBS_Model.Context.tt</DependentUpon>
+      <DependentUpon>DBSModel1.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="DBS_Model.cs">
+    <Compile Include="DBSModel1.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DBS_Model.tt</DependentUpon>
+      <DependentUpon>DBSModel1.tt</DependentUpon>
     </Compile>
-    <Compile Include="DBS_Model.Designer.cs">
+    <Compile Include="DBSModel1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DBS_Model.edmx</DependentUpon>
+      <DependentUpon>DBSModel1.edmx</DependentUpon>
     </Compile>
     <Compile Include="IreedemRewards.cs" />
     <Compile Include="IUserAuthentication.cs" />
@@ -119,16 +121,16 @@
       <DependentUpon>reedemRewards.svc</DependentUpon>
     </Compile>
     <Compile Include="rewardsmaster.cs">
-      <DependentUpon>DBS_Model.tt</DependentUpon>
+      <DependentUpon>DBSModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="rewardstransaction.cs">
-      <DependentUpon>DBS_Model.tt</DependentUpon>
+      <DependentUpon>DBSModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="UserAuthentication.svc.cs">
       <DependentUpon>UserAuthentication.svc</DependentUpon>
     </Compile>
     <Compile Include="userrewardsinfo.cs">
-      <DependentUpon>DBS_Model.tt</DependentUpon>
+      <DependentUpon>DBSModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="walletTopUp.svc.cs">
       <DependentUpon>walletTopUp.svc</DependentUpon>
@@ -138,14 +140,14 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <EntityDeploy Include="DBS_Model.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>DBS_Model.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="DBS_Model.edmx.diagram">
-      <DependentUpon>DBS_Model.edmx</DependentUpon>
-    </Content>
     <Content Include="packages.config" />
+    <EntityDeploy Include="DBSModel1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DBSModel1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="DBSModel1.edmx.diagram">
+      <DependentUpon>DBSModel1.edmx</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
