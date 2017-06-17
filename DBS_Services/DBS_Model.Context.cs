@@ -13,10 +13,10 @@ namespace DBS_Services
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class rewardsdbEntities1 : DbContext
+    public partial class dbs_schemaEntities : DbContext
     {
-        public rewardsdbEntities1()
-            : base("name=rewardsdbEntities1")
+        public dbs_schemaEntities()
+            : base("name=dbs_schemaEntities")
         {
         }
     
@@ -25,8 +25,6 @@ namespace DBS_Services
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<rewardsmaster> rewardsmasters { get; set; }
-        public virtual DbSet<rewardstransaction> rewardstransactions { get; set; }
-        public virtual DbSet<userrewardsinfo> userrewardsinfoes { get; set; }
+        public virtual DbSet<reward> rewards { get; set; }
     }
 }

@@ -12,11 +12,10 @@ namespace DBS_Services
     using System;
     using System.Collections.Generic;
     
-    public partial class rewardstransaction
+    public partial class reward
     {
-        public int rewardstrasactionid { get; set; }
-        public Nullable<int> rewardsID { get; set; }
-        public Nullable<int> userID { get; set; }
-        public Nullable<System.DateTime> transactionDateTime { get; set; }
+        public int rewardsID { get; set; }
+        public string rewardsName { get; set; }
+        public string rewardsDescription { get; set; }
     }
 }

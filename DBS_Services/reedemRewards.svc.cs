@@ -24,13 +24,13 @@ namespace DBS_Services
             try
             {
 
-                using (rewardsdbEntities1 dataCollector = new rewardsdbEntities1())
+                using (dbs_schemaEntities dataCollector = new dbs_schemaEntities())
                 {
                     dataCollector.Database.Connection.Open();
-                    foreach (var dataRow in dataCollector.rewardsmasters)
+                    foreach (var dataRow in dataCollector.rewards)
                     {
-                        rewardsArray.Add(dataRow.rewardDescription);
-                        rewardsArray.Add(dataRow.rewardName);
+                        rewardsArray.Add(dataRow.rewardsDescription);
+                        rewardsArray.Add(dataRow.rewardsName);
                     }
                 }
             } catch (Exception e)
